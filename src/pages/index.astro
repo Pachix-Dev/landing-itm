@@ -1,0 +1,106 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { ContactForm } from '../components/ContactForm'
+import { WhyParticipate } from '../components/WhyParticipate.jsx'
+---
+
+<Layout title='ITM | Conviértete en Expositor'>
+  <main>
+    <section class='h-screen'>
+      <video
+        src='/BG-ITM-2024.mp4'
+        autoplay
+        loop
+        muted
+        class='h-screen w-full object-cover absolute z-[-1]'></video>
+      <img
+        src='/Logo_ITM.webp'
+        alt='Industrial transformation Mexico'
+        width='250'
+      />
+      <div
+        class='container px-4 mx-auto grid items-center content-center place-items-center'
+      >
+        <img src='/ITMKVTEXTOESPv1.webp' alt='ITM' class='md:w-3/6 w-full' />
+        <div
+          class='mt-10 mb-10 flex gap-10 justify-center'
+          style='text-shadow: none'
+        >
+          <a
+            class='inline-flex items-center gap-2 rounded border px-8 py-3 text-white bg-[#D03C4C] hover:bg-[#475CA0]'
+            href='#expositor'
+          >
+            <span class='text-sm font-bold'>
+              ¿Quieres ser <br />Expositor?</span
+            >
+
+            <svg
+              class='h-5 w-5 rotate-90'
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                stroke-width='2'
+                d='M17 8l4 4m0 0l-4 4m4-4H3'></path>
+            </svg>
+          </a>
+
+          <a
+            class='inline-flex items-center gap-2 rounded border px-8 py-3 text-white bg-[#D03C4C] hover:bg-[#475CA0]'
+            href='https://industrialtransformation.mx/'
+            target='_blank'
+          >
+            <span class='text-sm font-bold'>
+              Conoce más<br /> sobre Ecomondo</span
+            >
+
+            <svg
+              class='h-5 w-5 rtl:rotate-180'
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                stroke-width='2'
+                d='M17 8l4 4m0 0l-4 4m4-4H3'></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class='container mx-auto py-10'>
+      <p class='text-3xl text-[#E42128] font-bold'>
+        Industrial Transformation Mexico 2024
+      </p>
+      <p class='mt-5 text-lg'>
+        Como la plataforma de la <strong>Industria 4.0 en América Latina</strong
+        >, ITM es el escaparate de la transformación industrial año tras año,
+        con innovaciones, avances tecnológicos y productos innovadores. Desde el
+        desarrollo hasta la producción, pasando por la logística, el suministro
+        de energía y los servicios, <strong
+          >INDUSTRIAL TRANSFORMATION MÉXICO</strong
+        > muestra soluciones intersectoriales y tecnologías de interfaz para todo
+        el ecosistema industrial.
+      </p>
+      <p class='mt-5'>
+        Si estás interesado en asistir a Industrial Transformation Mexico.<br />
+        ¡Déjanos tus datos de contacto ahora! Garantizamos asistencia dedicada por
+        su asistencia así como un descuento especial...
+      </p>
+    </section>
+    <section class='mt-10' id='expositor'>
+      <p class='text-4xl font-bold text-center'>
+        ¡Aprovecha esta gran oportunidad para convertirte en expositor!
+      </p>
+      <ContactForm client:visible />
+    </section>
+    <WhyParticipate client:only />
+  </main>
+</Layout>
