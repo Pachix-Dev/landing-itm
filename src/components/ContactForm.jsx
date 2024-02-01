@@ -94,40 +94,30 @@ export function ContactForm() {
             <option value='' defaultValue>
               Elige una opción
             </option>
-            <option value='INGENIERIA'>INGENIERIA</option>
-            <option value='SECTOR EDUCATIVO'>SECTOR EDUCATIVO</option>
-            <option value='AUTOMOTRIZ'>AUTOMOTRIZ</option>
-            <option value='ELECTRICIDAD Y ELECTRÓNICA'>
-              ELECTRICIDAD Y ELECTRÓNICA
+            <option value='Máquinas y Herramientas / Metalworking'>
+              Máquinas y Herramientas / Metalworking
             </option>
-            <option value='SISTEMAS INTEGRADORES'>SISTEMAS INTEGRADORES</option>
-            <option value='INDUSTRIA DE MAQUINARIA DE HERRAMIENTA'>
-              INDUSTRIA DE MAQUINARIA DE HERRAMIENTA
+            <option value='Automatización, Robotización y Transmisión / Automation, Robotization & Motion'>
+              Automatización, Robotización y Transmisión / Automation,
+              Robotization & Motion
             </option>
-            <option value='GOBIERNO'>GOBIERNO</option>
-            <option value='LOGÍSTICA Y CADENA DE SUMINISTROS'>
-              LOGÍSTICA Y CADENA DE SUMINISTROS
+            <option value='Logística Inteligente / Smart Logistics'>
+              Logística Inteligente / Smart Logistics
             </option>
-            <option value='PROCESOS INDUSTRIALES (ACERO, PETRÓLEO Y QUÍMICO)'>
-              PROCESOS INDUSTRIALES (ACERO, PETRÓLEO Y QUÍMICO)
+            <option value='Manufactura Digital y TIC / Digital Factory & ITC'>
+              Manufactura Digital y TIC / Digital Factory & ITC
             </option>
-            <option value='ALIMENTOS Y BEBIDAS'>ALIMENTOS Y BEBIDAS</option>
-            <option value='TELECOMUNICACIONES'>TELECOMUNICACIONES</option>
-            <option value='INGENIERÍA DE PLANTAS Y MECÁNICA'>
-              INGENIERÍA DE PLANTAS Y MECÁNICA
+            <option value='Soluciones de Energía / Power Solutions'>
+              Soluciones de Energía / Power Solutions
             </option>
-            <option value='AEROESPACIAL'>AEROESPACIAL</option>
-            <option value='CUIDADO DE LA SALUD'>CUIDADO DE LA SALUD</option>
-            <option value='FACILIDADES E INFRAESTRUCTURA Y SOLUCIONES URBANAS'>
-              FACILIDADES E INFRAESTRUCTURA Y SOLUCIONES URBANAS
+            <option value='Manufactura Aditiva / Additive Manufacture'>
+              Manufactura Aditiva / Additive Manufacture
             </option>
-            <option value='CÁMARAS Y ASOCIACIONES'>
-              CÁMARAS Y ASOCIACIONES
+            <option value='Gobierno / Government'>Gobierno / Government</option>
+            <option value='Instituciones de investigación / Research institutions'>
+              Instituciones de investigación / Research institutions
             </option>
-            <option value='EMBALAJE'>EMBALAJE</option>
-            <option value='BIOTECNOLOGÍA Y FARMACÉUTICA'>
-              BIOTECNOLOGÍA Y FARMACÉUTICA
-            </option>
+            <option value='Startups @ITM'>Startups @ITM</option>
             <option value='Otros'>Otros</option>
           </select>
         </div>
