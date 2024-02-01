@@ -6,5 +6,6 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://expositor.industrialtransformation.mx',
   integrations: [tailwind(), sitemap(), react()]
 });
