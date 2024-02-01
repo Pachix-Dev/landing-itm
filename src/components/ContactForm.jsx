@@ -19,7 +19,7 @@ export function ContactForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-
+    setSendStatus(true)
     const formData = Object.fromEntries(new window.FormData(event.target))
     const requestOptions = {
       method: 'POST',
@@ -31,13 +31,13 @@ export function ContactForm() {
     try {
       setSendStatus(true)
       const res = await fetch(
-        'https://hfmexico.mx/ecomondo/newsletter/landingPage.php',
+        'https://expositor.industrialtransformation.mx/backend/landingPage.php',
         requestOptions
       )
       const data = await res.json()
       if (data.status) {
         const statusEmail = await fetch(
-          'https://hfmexico.mx/foro-electromovilidad/backend/email/send-email-ecomondo',
+          'https://hfmexico.mx/foro-electromovilidad/backend/email/send-email-itm-landing',
           requestOptions
         )
         const dataEmail = await statusEmail.json()
@@ -94,12 +94,39 @@ export function ContactForm() {
             <option value='' defaultValue>
               Elige una opción
             </option>
-            <option value='Manejo de residuos y economía circular'>
-              Manejo de residuos y economía circular
+            <option value='INGENIERIA'>INGENIERIA</option>
+            <option value='SECTOR EDUCATIVO'>SECTOR EDUCATIVO</option>
+            <option value='AUTOMOTRIZ'>AUTOMOTRIZ</option>
+            <option value='ELECTRICIDAD Y ELECTRÓNICA'>
+              ELECTRICIDAD Y ELECTRÓNICA
             </option>
-            <option value='Bioenergía'>Bioenergía</option>
-            <option value='Cuidado y manejo del agua'>
-              Cuidado y manejo del agua
+            <option value='SISTEMAS INTEGRADORES'>SISTEMAS INTEGRADORES</option>
+            <option value='INDUSTRIA DE MAQUINARIA DE HERRAMIENTA'>
+              INDUSTRIA DE MAQUINARIA DE HERRAMIENTA
+            </option>
+            <option value='GOBIERNO'>GOBIERNO</option>
+            <option value='LOGÍSTICA Y CADENA DE SUMINISTROS'>
+              LOGÍSTICA Y CADENA DE SUMINISTROS
+            </option>
+            <option value='PROCESOS INDUSTRIALES (ACERO, PETRÓLEO Y QUÍMICO)'>
+              PROCESOS INDUSTRIALES (ACERO, PETRÓLEO Y QUÍMICO)
+            </option>
+            <option value='ALIMENTOS Y BEBIDAS'>ALIMENTOS Y BEBIDAS</option>
+            <option value='TELECOMUNICACIONES'>TELECOMUNICACIONES</option>
+            <option value='INGENIERÍA DE PLANTAS Y MECÁNICA'>
+              INGENIERÍA DE PLANTAS Y MECÁNICA
+            </option>
+            <option value='AEROESPACIAL'>AEROESPACIAL</option>
+            <option value='CUIDADO DE LA SALUD'>CUIDADO DE LA SALUD</option>
+            <option value='FACILIDADES E INFRAESTRUCTURA Y SOLUCIONES URBANAS'>
+              FACILIDADES E INFRAESTRUCTURA Y SOLUCIONES URBANAS
+            </option>
+            <option value='CÁMARAS Y ASOCIACIONES'>
+              CÁMARAS Y ASOCIACIONES
+            </option>
+            <option value='EMBALAJE'>EMBALAJE</option>
+            <option value='BIOTECNOLOGÍA Y FARMACÉUTICA'>
+              BIOTECNOLOGÍA Y FARMACÉUTICA
             </option>
             <option value='Otros'>Otros</option>
           </select>
@@ -197,9 +224,9 @@ export function ContactForm() {
           ></textarea>
         </div>
         {sendStatus ? (
-          <span className='text-white flex'>
+          <span className='text-dark text-lg font-bold flex'>
             <svg
-              className='animate-spin -ml-1 mr-3 h-5 w-5 text-white'
+              className='animate-spin -ml-1 mr-3 h-5 w-5 text-dark'
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
               viewBox='0 0 24 24'
