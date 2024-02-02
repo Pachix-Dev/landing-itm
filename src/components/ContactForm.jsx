@@ -118,7 +118,6 @@ export function ContactForm() {
               Instituciones de investigación / Research institutions
             </option>
             <option value='Startups @ITM'>Startups @ITM</option>
-            <option value='Otros'>Otros</option>
           </select>
         </div>
         <div>
