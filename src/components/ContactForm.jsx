@@ -55,7 +55,7 @@ export function ContactForm() {
           )
         }
       } else {
-        setMessage(
+        setResponse(
           'Lo sentimos en este momento no es posible enviar tu información...'
         )
       }
