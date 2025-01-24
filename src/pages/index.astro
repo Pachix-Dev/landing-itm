@@ -2,7 +2,6 @@
 import { changeLanguage, t } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import { ContactForm } from "../components/ContactForm";
-import { WhyParticipate } from "../components/WhyParticipate.jsx";
 import Card from "../components/Card.astro";
 import Score from "../components/Score.astro";
 
@@ -74,7 +73,7 @@ changeLanguage("es");
         Industrial Transformation Mexico 2025
       </p>
       <p class='mt-5 text-lg' set:html={t('home.text_3')} />
-      <p class='mt-5' set:html={t('home.text_4')} />
+      <p class='mt-5 text-lg' set:html={t('home.text_4')} />
     </section>
     <section class='mt-10' id='expositor'>
       <p class='text-3xl font-bold text-center'>
@@ -92,6 +91,9 @@ changeLanguage("es");
         </p>
         <p>
           {t('home.text_8')}
+        </p>
+        <p class='mt-5 text-2xl font-bold text-[#E42128]'>
+          {t('home.text_10')}
         </p>
         <Score />
       </div>
