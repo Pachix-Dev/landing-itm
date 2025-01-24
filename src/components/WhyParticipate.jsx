@@ -156,42 +156,44 @@ export function WhyParticipate() {
         </div>
         <div
           ref={ref}
-          className='mt-10 grid md:grid-cols-3 lg:grid-cols-5 gap-5'
+          className='mt-10 flex flex-wrap flex-1 gap-40 justify-center'
         >
           {show && (
             <>
               <div>
-                <Bullets number='15000' duration='4' />
+                <Bullets number='250' duration='4' />
                 <div className='text-center font-bold'>
-                  <i className='text-2xl'>Compradores profesionales</i>
+                  <i className='text-2xl'>Expositores</i>
                 </div>
               </div>
               <div>
-                <Bullets number='5000' duration='4' />
+                <Bullets number='13,000' duration='4' simbol='m2' />
                 <div className='text-center font-bold'>
-                  <i className='text-2xl'>Estudiantes</i>
-                </div>
-              </div>
-              <div>
-                <Bullets number='1370' duration='4' />
-                <div className='text-center font-bold'>
-                  <i className='text-2xl'>
-                    Millones de pesos de negocios en sitio
-                  </i>
-                </div>
-              </div>
-              <div>
-                <Bullets number='260' duration='4' />
-                <div className='text-center font-bold'>
-                  <i className='text-2xl'>
-                    Millones de pesos de valor en cobertura mediática
-                  </i>
-                </div>
-              </div>
-              <div>
-                <Bullets number='13700' duration='4' simbol='m2' />
-                <div className='text-center font-bold '>
                   <i className='text-2xl'>Piso expositor</i>
+                </div>
+              </div>
+              <div>
+                <Bullets number='4' duration='4' />
+                <div className='text-center font-bold'>
+                  <i className='text-2xl'>Pabellones Internacionales</i>
+                </div>
+              </div>
+              <div>
+                <Bullets number='15,000' duration='4' />
+                <div className='text-center font-bold'>
+                  <i className='text-2xl'>simbol='m2'</i>
+                </div>
+              </div>
+              <div>
+                <Bullets number='1,370' duration='4' simbol='MDP' />
+                <div className='text-center font-bold '>
+                  <i className='text-2xl'>de negocios en sitio</i>
+                </div>
+              </div>
+              <div>
+                <Bullets number='260' duration='4' simbol='MDP' />
+                <div className='text-center font-bold '>
+                  <i className='text-2xl'>en valor de cobertura mediatica</i>
                 </div>
               </div>
             </>
