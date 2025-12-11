@@ -247,7 +247,7 @@ export function ContactForm() {
                 Enviar
               </button>
             ) : (
-              <span className='text-black font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 mt-10 text-center'>
+              <span className='text-black font-extrabold rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 mt-10 text-center'>
                 {response}
               </span>
             )}
